@@ -1,0 +1,39 @@
+[tool.poetry]
+name = "advent-of-code"
+version = "0.1.0"
+description = "My solutions to the adventofcode.com challenges"
+authors = ["Ant <anthony.hillairet@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "advent_of_code"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+scipy = "^1.9.3"
+typer = "^0.6.1"
+
+[tool.poetry.group.dev.dependencies]
+brunette = "^0.2.7"
+mypy = "^0.982"
+flake8 = "^5.0.4"
+isort = "^5.10.1"
+pytest = "^7.2.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.mypy]
+show_error_codes = true
+
+[tool.brunette]
+line_length = 99
+skip_string_normalization = true
+
+[tool.isort]
+line_length = 99
+multi_line_output = 3
+profile = "black"
+
+[[tool.mypy.overrides]]
+ignore_missing_imports = true
