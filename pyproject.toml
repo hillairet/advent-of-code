@@ -30,6 +30,10 @@ show_error_codes = true
 line_length = 99
 skip_string_normalization = true
 
+[tool.black]
+line_length = 99
+skip_string_normalization = true
+
 [tool.isort]
 line_length = 99
 multi_line_output = 3
