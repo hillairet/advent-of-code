@@ -25,7 +25,7 @@ def main():
     total_priority_part1 = 0
     total_priority_part2 = 0
     rucksack_group = []
-    with open('data/challenge2022day3.txt') as challenge_input:
+    with open('challenge2022day3/challenge2022day3.txt') as challenge_input:
         while line := challenge_input.readline():
             rucksack = line.strip()
 
