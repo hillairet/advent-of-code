@@ -1,0 +1,5 @@
+{
+  "challenge_day": "",
+  "challenge_year": "2022",
+  "project_slug": "challenge{{ cookiecutter.challenge_year }}day{{ cookiecutter.challenge_day }}"
+}
